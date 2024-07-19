@@ -1,4 +1,6 @@
 .calendar {
+	display: flex;
+
 	top: 0em;
 	left: 1em;
 	padding-top: 5px;
@@ -13,35 +15,49 @@
 }
 
 .calendar em {
-	display: block;
+	display: flex;
+	position: absolute;
 	font-size: 15px;
 	color: #fff;
-	background: #04599a;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
 
-.calendar::before, .calendar:after{
-	content:'';
-	float:left;
-	width:8px;
-	height:8px;
-	background:#111;
-	z-index:1;
-	border-radius:10px;
-	box-shadow:0 1px 1px #fff;
-	}
-.calendar::before{left:11px;}	
-.calendar::after{right:11px;}
-
-.calendar em::before, .calendar em::after{
-	content:'';
+.calendar::before,
+.calendar:after {
+	content: "";
 	float: left;
-	margin: 10px;
-	width:4px;
-	height:14px;
-	background:blue;
-	z-index:2;
-	}
-.calendar em::before{left:13px;}	
-.calendar em::after{right:13px;}	
+	width: 8px;
+	height: 8px;
+	background: #111;
+	z-index: 1;
+	border-radius: 10px;
+	box-shadow: 0 1px 1px #fff;
+	margin: 0px auto;
+}
+.calendar::before {
+	left: 11px;
+}
+.calendar::after {
+	right: 11px;
+}
+
+.calendar em::before,
+.calendar em::after {
+	content: "";
+	float: left;
+	width: 4px;
+	height: 14px;
+	background: #d9d9d9;
+	z-index: 2;
+
+	border-radius: 2px;
+}
+.calendar em::before {
+	left: 13px;
+	margin: -9px 0px 0px 11px;
+}
+.calendar em::after {
+	margin: -9px 0px 0px 50px;
+	right: 13px;
+}

@@ -1,12 +1,24 @@
 body {
 	margin: 0;
 }
+#wrapper {
+	display: flex;
+}
 #sectionA {
+	display: inline-flex;
+	height: 100vh;
+	width: 33%;
 	background: blue;
 }
 #sectionB {
+	display: inline-flex;
+	height: 100vh;
+	width: 33%;
 	background: red;
 }
 #sectionC {
+	display: inline-flex;
+	height: 100vh;
+	width: 33%;
 	background: green;
 }

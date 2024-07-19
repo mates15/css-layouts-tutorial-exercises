@@ -1,11 +1,17 @@
 #wrapper {
-    background: grey;
+	display: flex;
+	height: 100px;
+	width: 100%;
 }
 
 #sidebar {
-    background: blue;
+	display: inline-block;
+	background: grey;
+	width: 30%;
 }
 
 #content {
-    background: yellow;
+	display: inline-block;
+	background: green;
+	width: 70%;
 }
